@@ -1,7 +1,7 @@
 [
   {
     "op": "replace",
-    "path": "/spec/rules/0/hosts",
+    "path": "/spec/rules/0/host",
     "value": "api.core-server-dev.m1.k8s.computational.bio"
   },
   {
