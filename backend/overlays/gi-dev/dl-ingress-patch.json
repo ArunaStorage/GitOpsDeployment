@@ -1,12 +1,12 @@
 [
   {
     "op": "replace",
-    "path": "/spec/rules/0/hosts",
+    "path": "/spec/rules/0/host",
     "value": "download.core-server-dev.m1.k8s.computational.bio"
   },
   {
     "op": "replace",
-    "path": "/spec/tls/0/hosts",
+    "path": "/spec/tls/0/hosts/0",
     "value": "download.core-server-dev.m1.k8s.computational.bio"
   }
 ]
