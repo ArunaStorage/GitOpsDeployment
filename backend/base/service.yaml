@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: core-server
+  namespace: core-storage-dev
+spec:
+  selector:
+    app.kubernetes.io/name: api
+    app.kubernetes.io/part-of: core-server
+    app.kubernetes.io/version: dev
+  ports:
+    - protocol: TCP
+      name: http2-api
+      port: 9000
+      targetPort: 50051
+    - protocol: TCP
+      name: http-stream
+      port: 9001
+      targetPort: 9011

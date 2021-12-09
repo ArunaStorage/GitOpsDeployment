@@ -1,0 +1,7 @@
+[
+    {
+      "op": "replace",
+      "path": "/spec/template/spec/containers/images",
+      "value": "harbor.computational.bio.uni-giessen.de/scienceobjectsdb/core-server:latest"
+    }
+  ]
