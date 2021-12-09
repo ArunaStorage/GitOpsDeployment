@@ -9,7 +9,7 @@ patches:
     target:
       kind: Ingress
       name: core-server
-  - path: api-ingress-patch.json
+  - path: dl-ingress-patch.json
     target:
       kind: Ingress
       name: core-server-downloader
