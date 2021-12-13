@@ -25,6 +25,9 @@ spec:
         - name: config
           configMap:
             name: corestorageconfig
+        - name: nats-nkey
+          secret:
+            secretName: natsnkeys
       containers:
         - env:
           - name: PSQL_PASSWORD
@@ -60,6 +63,9 @@ spec:
           command: [/CORE-Server]
           volumeMounts:
             - name: config
+              mountPath: "/config"
+              readOnly: true
+            - name: nats-nkey
               mountPath: "/config"
               readOnly: true
           ports:
