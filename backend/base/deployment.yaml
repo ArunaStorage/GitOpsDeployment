@@ -30,6 +30,8 @@ spec:
             secretName: natsnkeys
       containers:
         - env:
+          - name: LOG_LEVEL
+            value: Debug
           - name: PSQL_PASSWORD
             valueFrom:
               secretKeyRef:
