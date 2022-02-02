@@ -2,6 +2,6 @@
     {
       "op": "replace",
       "path": "/spec/template/spec/containers/images",
-      "value": "harbor.computational.bio.uni-giessen.de/scienceobjectsdb/core-server:latest"
+      "value": "harbor.computational.bio.uni-giessen.de/scienceobjectsdb/core-server@sha256:7dfe9d22fa7df2c1c433a05537e1e3699e5cf1a5e7dbb3f7ec06f9297a2e08ba"
     }
 ]

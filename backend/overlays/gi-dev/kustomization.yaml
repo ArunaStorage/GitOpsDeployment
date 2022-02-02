@@ -13,3 +13,7 @@ patches:
     target:
       kind: Ingress
       name: core-server-downloader
+  - path: deployment-patch.json
+    target:
+      kind: Deployment
+      name: core-server-downloader
