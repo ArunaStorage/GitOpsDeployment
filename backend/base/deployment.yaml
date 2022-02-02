@@ -1,6 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  annotations:
+    config.linkerd.io/opaque-ports: "4222"
   labels:
     app.kubernetes.io/name: api
     app.kubernetes.io/part-of: core-server
