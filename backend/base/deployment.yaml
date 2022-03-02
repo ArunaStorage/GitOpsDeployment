@@ -65,6 +65,7 @@ spec:
           name: core-server
           imagePullPolicy: Always
           command: [/CORE-Server]
+          args: ["run", "-c", "/config/config.yaml"]
           volumeMounts:
             - name: config
               mountPath: "/config"
