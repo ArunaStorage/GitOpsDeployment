@@ -64,7 +64,7 @@ spec:
               memory: 2000Mi
           name: core-server
           imagePullPolicy: Always
-          command: [/CORE-Server run]
+          command: [/CORE-Server]
           volumeMounts:
             - name: config
               mountPath: "/config"
